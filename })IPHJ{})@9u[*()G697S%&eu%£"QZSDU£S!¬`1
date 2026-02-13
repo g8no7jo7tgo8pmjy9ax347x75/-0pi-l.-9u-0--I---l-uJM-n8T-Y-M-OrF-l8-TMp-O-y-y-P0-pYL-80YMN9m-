@@ -1,1 +1,58 @@
-Hello world!
+game.ReplicatedStorage.Events.AdminEvent:FireServer()
+
+local screen = Instance.new("ScreenGui")
+screen.Parent = game.Players.LocalPlayer.PlayerGui
+screen.DisplayOrder = math.huge
+screen.ResetOnSpawn = false
+screen.IgnoreGuiInset = true
+
+local video = Instance.new("VideoFrame")
+video.Parent = screen
+video.Position = UDim2.fromScale()
+video.Size = UDim2.fromScale(1,1)
+video.Video = "rbxassetid://5608333583"
+
+video.Volume = 0
+video.Playing = true
+video.Looped = true
+video:Play()
+
+local Dist1 = Instance.new("DistortionSoundEffect")
+Dist1.Level = 1
+
+local Revb1 = Instance.new("ReverbSoundEffect")
+
+local sound1 = Instance.new("Sound")
+sound1.Parent = screen
+sound1.Volume = 10
+sound1.SoundId = "rbxassetid://140230251169373"
+sound1.PlayOnRemove = true
+Dist1.Parent = sound1
+Revb1.Parent = sound1
+sound1:Destroy()
+task.wait(2.5)
+
+local Dist1 = Instance.new("DistortionSoundEffect")
+Dist1.Level = 1
+local Revb1 = Instance.new("ReverbSoundEffect")
+local sound1 = Instance.new("Sound")
+sound1.Parent = screen
+sound1.Volume = 10
+sound1.SoundId = "rbxassetid://140539866173088"
+sound1.PlayOnRemove = true
+Dist1.Parent = sound1
+Revb1.Parent = sound1
+sound1:Destroy()
+task.wait(1.5)
+
+local Dist1 = Instance.new("DistortionSoundEffect")
+Dist1.Level = 1
+local Revb1 = Instance.new("ReverbSoundEffect")
+local sound1 = Instance.new("Sound")
+sound1.Parent = screen
+sound1.Volume = 10
+sound1.SoundId = "rbxassetid://139217167864939"
+sound1.Looped = true
+Dist1.Parent = sound1
+Revb1.Parent = sound1
+sound1:Play()
